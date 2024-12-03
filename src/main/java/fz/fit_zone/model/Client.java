@@ -21,12 +21,11 @@ import lombok.ToString;
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer idClient;
     private String name_client;
     private String last_name_client;
     private String email_client;
     private Integer membership_number;
-    private Date date_registered;
-
+    private Date date_registered = new Date();
 
 }
